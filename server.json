@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.lithacker6458/metaculus",
   "title": "Metaculus",
-  "description": "Browse Metaculus forecasting questions, submit and withdraw forecasts (binary, multiple-choice, and continuous via an automatic percentile-to-CDF builder), post rationale comments, and pull CSV score/forecast exports. Bring your own free Metaculus API token; the server stores nothing.",
+  "description": "Browse Metaculus questions, submit forecasts (auto CDF builder), comment, and export score data.",
   "version": "1.0.0",
   "websiteUrl": "https://github.com/lithacker6458/metaculus-mcp",
   "remotes": [
