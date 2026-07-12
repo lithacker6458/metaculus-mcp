@@ -1,0 +1,24 @@
+{
+  "name": "metaculus-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Remote MCP server for the Metaculus forecasting platform API v2, running on Cloudflare Workers. Each user supplies their own free Metaculus API token via request header; the server holds zero secrets.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "build": "wrangler deploy --dry-run --outdir=dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "agents": "^0.17.3",
+    "fflate": "^0.8.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260712.1",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.107.0"
+  }
+}

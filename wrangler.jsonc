@@ -1,0 +1,14 @@
+{
+  // Metaculus MCP server — stateless remote MCP server on Cloudflare Workers.
+  // No bindings, no secrets: each user's Metaculus API token arrives per-request
+  // via header and is forwarded verbatim to metaculus.com. Runs on the free tier.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "metaculus-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": ["nodejs_compat"],
+  // Usage logging (v1 is free; logs let you see adoption). Never logs token values.
+  "observability": {
+    "enabled": true
+  }
+}

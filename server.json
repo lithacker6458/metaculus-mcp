@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.lithacker6458/metaculus",
+  "title": "Metaculus",
+  "description": "Browse Metaculus forecasting questions, submit and withdraw forecasts (binary, multiple-choice, and continuous via an automatic percentile-to-CDF builder), post rationale comments, and pull CSV score/forecast exports. Bring your own free Metaculus API token; the server stores nothing.",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/lithacker6458/metaculus-mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://metaculus-mcp.anishboddu6.workers.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your Metaculus API token in the format 'Token <token>' (generate one free at https://www.metaculus.com/accounts/settings/account/#api-access). 'Bearer <token>' and an 'X-Metaculus-Token' header are also accepted.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
